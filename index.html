@@ -1,19 +1,34 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Weather Application | OpenWeatherMap API</title>
-  <link rel="stylesheet" href="css/style.css">
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Weather App for Kuwait City</title>
+		<link rel = "stylesheet" href= "stylesheet.css" />
 </head>
 <body>
 
-  <form>
-  	<input type="text" name="city" value="" placeholder="city" id="city">
-  	<input type="submit" value="Get Weather" id="getTemp">
-  </form>
 
-  <!-- Add your code in here -->
+	<div class = "app-wrap">
+				<header>
+			<input type="text" autocomplete = "off" class = "search-box" placeholder = "Search for a city..."/>
+		</header>
+		<main>
+			<section class ="location">
+				<div class="city">Kuwait City, KW</div>
+				<div class="date">  Friday, November 20, 2020</div>
+			</section>
+			<div class="current">
+				<div class="temp">81<span>°F</span></div>
+				<div class="weather">Partly Cloudy</div>
+				<div class="hi-low">89°F / 71°F</div>
+				
 
-  <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+		</main>	
 
-</body>
+		<script type="module" src="main.js"></script>
+
+	</body>
+	
 </html>
