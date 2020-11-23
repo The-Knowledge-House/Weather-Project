@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Weather Application | OpenWeatherMap API</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script defer src="main.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>CITYSTORMS</h1>
+			<h4>search weather for any city!</h4>
+		</header>
+		<input type="text" id="city-search" placeholder="Enter a city here..." />
+		<br />
+		<button id="search">Search</button>
+		<div class="display">
+			<h3 id="city-name"></h3>
+			<h1 id="temperature"></h1>
+		</div>
 
-  <form>
-  	<input type="text" name="city" value="" placeholder="city" id="city">
-  	<input type="submit" value="Get Weather" id="getTemp">
-  </form>
-
-  <!-- Add your code in here -->
-
-  <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
-
-</body>
+		<noscript>This site requires JS to function properly.</noscript>
+	</body>
 </html>

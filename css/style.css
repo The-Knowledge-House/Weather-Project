@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Overpass:wght@100&display=swap");
+/* 
+font-family: 'Arimo', sans-serif;
+font-family: 'Overpass', sans-serif;
+*/
+
+body {
+	margin: 0 auto;
+	text-align: center;
+	background: url("../img/rainy.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+header {
+	font-size: 1.2em;
+	color: rgba(0, 0, 0, 0.719);
+	font-family: "Overpass", sans-serif;
+	font-weight: 100;
+}
+
+.display {
+	margin-top: 100px;
+	font-size: 3em;
+}
+
+#city-name,
+#temperature {
+	font-family: "Overpass", sans-serif;
+}
+
+#city-search,
+#search {
+	outline: none;
+	border: none;
+	padding: 1em;
+}
+
+#search {
+	font-family: "Arimo", sans-serif;
+	font-size: 1em;
+	color: white;
+	margin-top: 1em;
+	padding: 0.5em 1em;
+	background: rgba(4, 89, 70, 0.555);
+	cursor: pointer;
+}
+
+#search:hover {
+	filter: invert(90%) hue-rotate(100deg);
+}
+
+#temperature:hover {
+	cursor: pointer;
+}
