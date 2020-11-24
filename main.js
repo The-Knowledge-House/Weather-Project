@@ -17,11 +17,17 @@ getWeather.addEventListener('click', async (e) => {
   try {
     let response = await axios.get(weatherUrl)
     let weatherData = response.data
+    console.log(weatherData)
 
-    //Time-Date
-    let newDate = new Date();
-    let date = newDate.toLocaleDateString()
-    let time = newDate.toLocaleTimeString();
+    //Time-Date 
+    let currentTime = new Date();
+    let timeZoneValue = weatherData.timezone / 3600; //[timezone value convert it to hours]
+    let tzDifference = timeZoneValue * 60 + currentTime.getTimezoneOffset();
+    let offSetTime = new Date(currentTime.getTime() + tzDifference * 60 * 1000);
+
+
+    let time = offSetTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    let date = offSetTime.toLocaleDateString();
     let newp2Element = document.createElement('p');
     newp2Element.setAttribute('id', "time-data");
     newp2Element.textContent = `${time}, ${date}`;
