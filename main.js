@@ -25,10 +25,7 @@ searchBtn.addEventListener('click', async (url) => {
     try {
         if (input.value) {
             let tempUnit = `\u00B0 F`;
-            // getting weather data
             url = await axios.get(`${BASE_URL}/data/2.5/weather?q=${input.value}&appid=${API_KEY}`);
-            console.log(url);
-            // display temperature
             cityName.innerText = `${url.data.name}, ${url.data.sys.country}`;
             temperature.innerText = `${kelvinToFahrenheit(url.data.main.temp)} ${tempUnit}`;
             let weatherMain = url.data.weather[0].main;
@@ -72,7 +69,6 @@ searchBtn.addEventListener('click', async (url) => {
                     icon.classList.add('wi', 'wi-na');
                     break;
             }
-
             temperature.addEventListener('click', () => {
                 if (tempUnit === `\u00B0 F`) {
                     tempUnit = `\u00B0 C`;
