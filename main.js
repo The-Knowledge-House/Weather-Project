@@ -60,7 +60,7 @@ searchBtn.addEventListener('click', async (url) => {
                     icon.classList.add('wi', 'wi-tornado');
                     break;
                 case 'Clear':
-                    hr > 6 < 18 ?
+                    hr > 6 && hr < 18 ?
                         icon.classList.add('wi', 'wi-horizon-alt') :
                         icon.classList.add('wi', 'wi-night-clear');
                     break;
