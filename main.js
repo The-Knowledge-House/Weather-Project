@@ -26,7 +26,7 @@ searchBtn.addEventListener('click', async (url) => {
             url = await axios.get(`${BASE_URL}/data/2.5/weather?q=${input.value}&appid=${API_KEY}`);
             console.log(url);
             // display temperature
-            cityName.innerText = url.data.name;
+            cityName.innerText = `${url.data.name}, ${url.data.sys.country}`;
             temperature.innerText = `${kelvinToFahrenheit(url.data.main.temp)} ${tempUnit}`;
             temperature.addEventListener('click', () => {
                 if (tempUnit === `\u00B0 F`) {
@@ -42,6 +42,7 @@ searchBtn.addEventListener('click', async (url) => {
     }
     catch (e) {
         console.log('Invalid city', e);
+        cityName.innerText = "Not a valid city";
     }
 });
 
