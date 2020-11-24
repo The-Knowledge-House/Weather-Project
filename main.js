@@ -4,6 +4,7 @@ dotenv.config();
 
 const getWeather = document.getElementById("getTemp");
 const searchWeatherInput = document.getElementById("city");
+const form = document.querySelector('form');
 
 
 
@@ -15,7 +16,45 @@ getWeather.addEventListener('click', async (e) => {
   
   try {
     let response = await axios.get(weatherUrl)
-    console.log(response);
+    let weatherData = response.data
+
+    //Time-Date
+    let newDate = new Date();
+    let date = newDate.toLocaleDateString()
+    let time = newDate.toLocaleTimeString();
+    let newp2Element = document.createElement('p');
+    newp2Element.setAttribute('id', "time-data");
+    newp2Element.textContent = `${time}, ${date}`;
+
+
+
+    //Name City
+    let nameCity = weatherData.name
+    let newparaElement = document.createElement('p')
+    newparaElement.setAttribute('id', 'cityname');
+    newparaElement.textContent = nameCity;
+    
+    //Weather icon
+    let weatherIcon = weatherData.weather[0].icon
+    let weatherSrc = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
+    let newImageElement = document.createElement('img')
+    newImageElement.setAttribute('src', weatherSrc);
+    
+    //Temperature in Farenheit
+    let temperature = weatherData.main.temp;
+    let newpElement = document.createElement('p')
+    newpElement.textContent = `${Math.floor(temperature)} °F`;
+
+
+    
+    document.querySelector('div').innerHTML = '';
+    document.querySelector('div').appendChild(newp2Element);
+    document.querySelector('div').appendChild(newparaElement);
+    document.querySelector('div').appendChild(newImageElement);
+    document.querySelector('div').appendChild(newpElement);
+    
+    form.reset();
+    
   } catch { 
     console.log(e);
   }
