@@ -22,10 +22,8 @@ window.addEventListener('load', (event) => {
 
 darkDiv.classList.remove("dark");
 searchBtn.addEventListener('click', async (url) => {
-    darkDiv.classList.add('dark');
     try {
         if (input.value) {
-
             let tempUnit = `\u00B0 F`;
             // getting weather data
             url = await axios.get(`${BASE_URL}/data/2.5/weather?q=${input.value}&appid=${API_KEY}`);
@@ -37,6 +35,7 @@ searchBtn.addEventListener('click', async (url) => {
             let weatherDescription = url.data.weather[0].description;
             description.innerText = weatherDescription;
             const hr = (new Date()).getHours();
+            darkDiv.classList.add('dark');
             switch (weatherMain) {
                 case 'Thunderstorm':
                     icon.classList.add('wi', 'wi-day-lightning');
