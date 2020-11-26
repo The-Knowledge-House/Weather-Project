@@ -1,5 +1,5 @@
 # CITYSTORMS
-![Image of Mist](https://i.imgur.com/zpZi0vf.jpeg)
+![Image of Mist](https://i.imgur.com/BJpxZDx.jpeg)
 
 ## Features:
 
