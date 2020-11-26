@@ -71,8 +71,8 @@ header .wi {
 }
 
 .dark {
-	background: rgba(0, 0, 0, 0.377);
-	width: 30%;
+	background: rgba(0, 0, 0, 0.097);
+	width: 20%;
 	margin: 0 auto;
 	opacity: 1;
 }
@@ -88,4 +88,8 @@ i {
 }
 .trans {
 	transition: all 1s ease-out;
+}
+
+#icon {
+	font-size: 2em;
 }
