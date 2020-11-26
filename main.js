@@ -42,10 +42,12 @@ getWeather.addEventListener('click', async (e) => {
     let weatherSrc = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
     let newImageElement = document.createElement('img');
     newImageElement.setAttribute('src', weatherSrc);
+    newImageElement.setAttribute('id', 'first-image')
     
     //Temperature in Farenheit
     let temperature = weatherData.main.temp;
     let newpElement = document.createElement('p')
+    newpElement.setAttribute('id', 'temp')
     newpElement.textContent = `${Math.floor(temperature)} °F`;
 
     //Max & Min Temperature
