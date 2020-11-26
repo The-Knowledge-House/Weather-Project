@@ -1,9 +1,10 @@
 # CITYSTORMS
 ![Image of Mist](https://i.imgur.com/BJpxZDx.jpeg)
 
+A simple weather app that shows weather for any city.
+
 ## Features:
 
-* Search weather for any city
 * Country codes displayed next to each city
 * Fahrenheit and Celsius functionality. Click on temperature to change units
 * Descriptions of weather displayed along with temperature
