@@ -7,7 +7,9 @@ font-family: 'Overpass', sans-serif;
 body {
 	margin: 0 auto;
 	text-align: center;
-	background: url("../img/rainy.jpg");
+	background-color: black;
+	background-image: url("https://images.unsplash.com/photo-1576269567911-e2b32418dd34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+	/* background: url("../img/rainy.jpg"); */
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -23,8 +25,13 @@ header h1 {
 	letter-spacing: 0.5rem;
 }
 
+header h1,
+header h4 {
+	color: white;
+}
+
 header .wi {
-	color: rgba(0, 0, 0, 0.719);
+	color: rgba(226, 226, 226, 0.719);
 }
 
 .display {
@@ -34,6 +41,7 @@ header .wi {
 
 #city-name,
 #temperature {
+	color: white;
 	font-family: "Overpass", sans-serif;
 }
 
@@ -54,7 +62,7 @@ header .wi {
 	color: white;
 	margin-top: 1em;
 	padding: 0.5em 1em;
-	background: rgba(4, 89, 70, 0.555);
+	background: rgb(4, 89, 71);
 	cursor: pointer;
 }
 
@@ -71,7 +79,7 @@ header .wi {
 }
 
 .dark {
-	background: rgba(0, 0, 0, 0.097);
+	filter: drop-shadow(1px 4px 8px #000000bb);
 	width: 20%;
 	margin: 0 auto;
 	opacity: 1;
