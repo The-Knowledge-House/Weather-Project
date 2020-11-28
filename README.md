@@ -3,7 +3,7 @@
 ![](./screenshot.png)
 
 ## Features:
- --- 
+
  - Find weather on any city in the world by typing the name of the city
  - It provides the max and min temperature of todays weather
  - This app will give users temperature in Fahrenheit
