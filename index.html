@@ -2,18 +2,27 @@
 <html>
 <head>
   <title>Weather Application | OpenWeatherMap API</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
+  <h1 class="h1"> Weather API</h1>
 
-  <form>
-  	<input type="text" name="city" value="" placeholder="city" id="city">
-  	<input type="submit" value="Get Weather" id="getTemp">
+  <form class="form" >
+  	<input  class="form-control" type="text" name="city" value="" placeholder="city" id="city">
+  	<input class="btn btn-lg btn-primary"  type="submit" value="Get Weather" id="getTemp">
   </form>
+  <div class="temp" >
+      
+    <h3 class= "tem"> </h3>
+  
+  
+  <h3 class="date"></h3>
 
+  </div>
   <!-- Add your code in here -->
 
-  <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script type="module" src="main.js"></script>
 
 </body>
 </html>
