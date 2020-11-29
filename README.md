@@ -1,5 +1,4 @@
 # CITYSTORMS
-![Image of Mist](img/collage.png)
 
 A simple weather app that shows weather for any city.
 
