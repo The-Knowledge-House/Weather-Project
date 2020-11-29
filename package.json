@@ -24,8 +24,5 @@
   },
   "browserslist": [
     "last 1 chrome version"
-  ],
-  "devDependencies": {
-    "nodemon": "^2.0.6"
-  }
+  ]
 }
