@@ -49,36 +49,36 @@ searchBtn.addEventListener('click', async (url) => {
 
             darkDiv.classList.add('dark');
 
-            switch (weatherMain) {
-                case 'Thunderstorm':
+            switch (true) {
+                case weatherMain === 'Thunderstorm':
                     icon.classList.add('wi', 'wi-day-lightning');
                     mainBody.style.backgroundImage = `url('${weatherBG.thunder}')`;
                     break;
-                case 'Drizzle':
+                case weatherMain === 'Drizzle':
                     icon.classList.add('wi', 'wi-showers');
                     mainBody.style.backgroundImage = `url('${weatherBG.drizzle}')`;
                     break;
-                case 'Rain':
+                case weatherMain === 'Rain':
                     icon.classList.add('wi', 'wi-rain');
                     mainBody.style.backgroundImage = `url('${weatherBG.rain}')`;
                     break;
-                case 'Snow':
+                case weatherMain === 'Snow':
                     icon.classList.add('wi', 'wi-snow-wind');
                     mainBody.style.backgroundImage = `url('${weatherBG.snow}')`;
                     break;
-                case ('Mist' || 'Haze' || 'Fog' || 'Smoke'):
+                case (weatherMain === 'Mist' || weatherMain === 'Haze' || weatherMain === 'Fog' || weatherMain === 'Smoke'):
                     mainBody.style.backgroundImage = `url('${weatherBG.foggy}')`;
                     icon.classList.add('wi', 'wi-fog');
                     break;
-                case ('Sand' || 'Dust'):
+                case (weatherMain === 'Sand' || weatherMain === 'Dust'):
                     icon.classList.add('wi', 'wi-sandstorm');
                     mainBody.style.backgroundImage = `url('${weatherBG.default}')`;
                     break;
-                case 'Tornado':
+                case weatherMain === 'Tornado':
                     icon.classList.add('wi', 'wi-tornado');
                     mainBody.style.backgroundImage = `url('${weatherBG.default}')`;
                     break;
-                case 'Clear':
+                case weatherMain === 'Clear':
                     if (hr > 6 && hr < 18) {
                         icon.classList.add('wi', 'wi-horizon-alt');
                     } else {
@@ -86,7 +86,7 @@ searchBtn.addEventListener('click', async (url) => {
                     }
                     mainBody.style.backgroundImage = `url('${weatherBG.clear}')`;
                     break;
-                case 'Clouds':
+                case weatherMain === 'Clouds':
                     icon.classList.add('wi', 'wi-cloudy');
                     mainBody.style.backgroundImage = `url('${weatherBG.cloudy}')`;
                     break;
@@ -110,6 +110,9 @@ searchBtn.addEventListener('click', async (url) => {
     catch (e) {
         console.log('Invalid city', e);
         cityName.innerText = "Not a valid city";
+        temperature.innerText = "";
+        description.innerText = "";
+        icon.className = '';
     }
 });
 
