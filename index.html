@@ -1,19 +1,38 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Weather Application | OpenWeatherMap API</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OpenWeatherMap Api</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- <div class="main">
+    <div class="header">
+      <h1>Hello</h1>
+      <h2>Welcome to the Weather App</h2>
+      <p>Enter any city name below to check the current weather</p>
+    </div>  -->
+  
+    <div class="input">
+      <input type="text" placeholder="Enter the city" class="input_text">
+      <input type="submit" value="Submit" class="submit">
+    </div>
+  </div>
 
-  <form>
-  	<input type="text" name="city" value="" placeholder="city" id="city">
-  	<input type="submit" value="Get Weather" id="getTemp">
-  </form>
+  <div class="container">
+    <div class="card">
+      <h1 class="name" id="name"></h1>
+      <p class="temp"></p>
+      <p class="clouds"></p>
+      <p class="desc"></p>
+      <p class="minTemp"></p>
+      <p class="maxTemp"></p>
 
-  <!-- Add your code in here -->
-
-  <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
-
+    </div>
+  </div>
+<script src="/app.js"></script>
 </body>
 </html>
