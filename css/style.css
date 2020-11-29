@@ -1,0 +1,57 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://media.istockphoto.com/photos/clear-blue-sky-backgroundclouds-with-background-picture-id1136415350?k=6&m=1136415350&s=170667a&w=0&h=mihG6pQaajQ5kwWYMBVQa6hTtV0SgX37Wd1wi40z-aE=);
+  background-repeat: no-repeat;
+  background-size: 150% 150%;
+}
+
+.cont {
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 120px;
+  height: 90vh;
+  width: 80vw;
+  background-color: whitesmoke;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+#message-name {
+  color: cornflowerblue;
+}
+
+input {
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 25px;
+  text-align: center;
+}
+input[type="text"] {
+  border: 2px solid cornflowerblue;
+  border-radius: 3px;
+  width: 30%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  background-color: whitesmoke;
+  color: cornflowerblue;
+  border: 1.5px solid cornflowerblue;
+  font-size: 15px;
+  padding: 12px 28px;
+  transition-duration: 0.4s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: cornflowerblue; /* Green */
+  color: white;
+}

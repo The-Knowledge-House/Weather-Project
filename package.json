@@ -1,0 +1,28 @@
+{
+  "name": "weather-project",
+  "version": "1.0.0",
+  "description": "This is where you will be completing and pull requesting your project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JenniferSmith007/Weather-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JenniferSmith007/Weather-Project/issues"
+  },
+  "homepage": "https://github.com/JenniferSmith007/Weather-Project#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "browserslist": [
+    "last 1 chrome version"
+  ]
+}
