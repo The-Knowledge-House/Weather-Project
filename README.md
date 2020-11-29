@@ -1,4 +1,3 @@
-# Weather-Project
-This is where you will be completing and pull requesting your project
-
-You have to fork and clone this repository
+# Weather App Project
+*Only did city not zipcode*
+*[Project Reference](https://youtu.be/GXrDEA3SIOQ)*
