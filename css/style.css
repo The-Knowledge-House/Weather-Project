@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(98, 197, 74);
+}
+.form {
+    background: rgb(194, 185, 185);
+    padding: 9px;
+    border-radius: 9px;
+    text-align: center;
+    height: 10%;
+   }
+
+.btn:hover{
+    background-color:blueviolet;
+}
+.h1{
+    color: rgb(167, 26, 73);
+    margin-top: 25px;
+    font-family: Arial,sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.temp {
+    margin-top: 3%;
+    font-family: Arial,sans-serif;
+    font-size: 1rem;
+    text-decoration:none;
+    text-align: center;
+    background-color: rgb(110, 108, 9);
+    border-radius:  6px;
+}

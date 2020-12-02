@@ -12,16 +12,22 @@ const form = document.querySelector("form");
 
 
 //setting up the getTemp eventlistener
-getTemp.addEventListener('click', async (e) => {
-    let cityWeather = searchWeatherInput.value;
+getTemp.addEventListener('click', (e) => {
+    e.preventDefault();
+    let cityWeather = searchWeatherInput.value.toLowerCase();
     let weatherURL = `${process.env.API_BASE_URL}/data/2.5/weather?q=${cityWeather}&units=imperial&appid=${process.env.API_KEY}`;
     
-    try {
-        let response = await axios.get(weatherURL);
-        let weatherData = response.data;
-        console.log(weatherData);
-} catch {
-    console.log(e)
-}
+    axios.get(weatherURL)
+        .then( (response) => {
+         //console.log(response);
+         let tempOutput = document.querySelector('.tem')   ;
+         tempOutput.innerHTML= `The temperature in ${city}, ${response.data.sys.country} is ${Math.round(response.data.main.temp)} °F`
+        })
+
+    .catch( (error) => {
+        let tempOutputError = document.querySelector('.tem');
+        tempOutputError.innerHTML= 'Please retype your city'
+    }) 
+
 })
 
