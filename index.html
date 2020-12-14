@@ -4,16 +4,20 @@
 <head>
   <title>Weather Application | OpenWeatherMap API</title>
   <link rel="stylesheet" href="style.css">
+ <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> 
 </head>
 
 <body>
+
+
   <div class="container">
 
     <h2>OpenWeatherMap</h2>
 
     <div class="flex-box">
-      <input type="text" placeholder="Enter Zip Code or City" class="input-text" id="city">
-      <button id="submit" class="btn btn-primary">Submit</button>
+      <input type="text" placeholder="Enter Zip Code or City" class="input-text" id="cityInput">
+      <input type="button" id="submit" class="btn btn-primary" value="submit">
     </div>
 
     <div class="results">
@@ -21,8 +25,7 @@
     </div>
 
   </div>
-
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 
 </body>
 

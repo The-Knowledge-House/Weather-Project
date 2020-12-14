@@ -1,7 +1,7 @@
 {
   "name": "Weather-Project",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "repository": "git@github.com:katfernandez22/Weather-Project.git",
   "author": "katfernandez22 <60719712+katfernandez22@users.noreply.github.com>",
   "license": "MIT",
