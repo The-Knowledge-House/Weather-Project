@@ -1,0 +1,15 @@
+{
+  "name": "Weather-Project",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "git@github.com:katfernandez22/Weather-Project.git",
+  "author": "katfernandez22 <60719712+katfernandez22@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0"
+  }
+}

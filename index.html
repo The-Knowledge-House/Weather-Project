@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Weather Application | OpenWeatherMap API</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+ <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> 
 </head>
+
 <body>
 
-  <form>
-  	<input type="text" name="city" value="" placeholder="city" id="city">
-  	<input type="submit" value="Get Weather" id="getTemp">
-  </form>
 
-  <!-- Add your code in here -->
+  <div class="container">
 
-  <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+    <h2>OpenWeatherMap</h2>
+
+    <div class="flex-box">
+      <input type="text" placeholder="Enter Zip Code or City" class="input-text" id="cityInput">
+      <input type="button" id="submit" class="btn btn-primary" value="submit">
+    </div>
+
+    <div class="results">
+      <div id="result-api"></div>
+    </div>
+
+  </div>
+    <script src="main.js"></script>
 
 </body>
+
 </html>
